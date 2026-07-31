@@ -1,0 +1,49 @@
+{
+  "name": "english-video-factory",
+  "version": "3.2.1",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic vocabulary-video factory using Excel, fixed scene blueprints, optional Claude skills, meaning-recall videos with spoken summaries and branded channel outro, Python TTS, HyperFrames and FFmpeg",
+  "packageManager": "pnpm@10.14.0",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "scripts": {
+    "evf": "tsx apps/cli/src/index.ts",
+    "dev": "tsx apps/cli/src/index.ts",
+    "doctor": "tsx apps/cli/src/index.ts doctor",
+    "typecheck": "tsc --noEmit --pretty false",
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "hf:doctor": "hyperframes doctor",
+    "hf:version": "hyperframes --version",
+    "tts:install": "python -m pip install -e \"services/tts-python[vieneu,dev]\"",
+    "tts:dev": "python -m uvicorn tts_service.api:app --reload --host 127.0.0.1 --port 8124 --app-dir services/tts-python/src",
+    "tts:start": "python -m uvicorn tts_service.api:app --host 127.0.0.1 --port 8124 --app-dir services/tts-python/src",
+    "tts:test": "python -m pytest services/tts-python/tests"
+  },
+  "dependencies": {
+    "commander": "^14.0.0",
+    "dotenv": "^17.2.1",
+    "p-limit": "^7.2.0",
+    "zod": "^4.0.17",
+    "jszip": "^3.10.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "hyperframes": "0.7.84",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "onnxruntime-node",
+      "protobufjs",
+      "@google/genai"
+    ]
+  }
+}

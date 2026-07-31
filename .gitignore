@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.local
+output/
+!output/.gitkeep
+examples/output/**
+!examples/output/.gitkeep
+services/tts-python/.venv/
+services/tts-python/.pytest_cache/
+services/tts-python/**/__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

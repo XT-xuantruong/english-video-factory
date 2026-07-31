@@ -1,0 +1,414 @@
+{
+  "version": "3.2.1",
+  "videoType": "meaning_recall",
+  "renderer": "hyperframes",
+  "contentType": "vocabulary_recall",
+  "blueprintId": "vocabulary-meaning-recall",
+  "themeId": "english-modern",
+  "metadata": {
+    "title": "Đoán 5 từ tiếng Anh · Vocabulary recall",
+    "channel": "English Mỗi Ngày",
+    "level": "B1",
+    "topic": "Vocabulary recall",
+    "source": {
+      "type": "excel",
+      "value": "data/content.xlsx",
+      "sheet": "vocabulary_recall"
+    }
+  },
+  "video": {
+    "id": "daily-recall-01",
+    "title": "Đoán 5 từ tiếng Anh · Vocabulary recall",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "aspect": "9:16"
+  },
+  "lockedFacts": {
+    "countdownSec": 7,
+    "items": [
+      {
+        "id": "resilient-spelling",
+        "word": "resilient",
+        "ipa": "/rɪˈzɪliənt/",
+        "meaningVi": "kiên cường, có khả năng phục hồi"
+      },
+      {
+        "id": "adaptable-fill-blank",
+        "word": "adaptable",
+        "ipa": "/əˈdæptəbəl/",
+        "meaningVi": "có khả năng thích nghi"
+      },
+      {
+        "id": "efficient-meaning",
+        "word": "efficient",
+        "ipa": "/ɪˈfɪʃənt/",
+        "meaningVi": "hiệu quả, ít lãng phí"
+      },
+      {
+        "id": "scarce-antonym",
+        "word": "scarce",
+        "ipa": "/skeəs/",
+        "meaningVi": "khan hiếm, không đủ"
+      },
+      {
+        "id": "comfortable-pronunciation",
+        "word": "comfortable",
+        "ipa": "/ˈkʌmftəbəl/",
+        "meaningVi": "thoải mái"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "role": "intro",
+      "kind": "intro",
+      "templateId": "shared-intro",
+      "inputs": {
+        "seriesLabel": "ĐOÁN TỪ TIẾNG ANH",
+        "hook": "Hôm nay mình cùng ôn nhanh năm từ vựng nhé.",
+        "previewText": "5 TỪ VỰNG",
+        "level": "B1",
+        "topic": "Vocabulary recall",
+        "brand": "English Mỗi Ngày"
+      },
+      "audioSegments": [
+        {
+          "id": "intro-audio-1",
+          "language": "vi",
+          "text": "Hôm nay mình cùng ôn nhanh năm từ vựng nhé.",
+          "pauseBeforeMs": 0,
+          "pauseAfterMs": 350,
+          "rewritable": false,
+          "sourceField": "generated.recall_intro"
+        }
+      ],
+      "minDurationSec": 5,
+      "transition": "cut"
+    },
+    {
+      "id": "recall-1",
+      "role": "main",
+      "kind": "recall_item",
+      "templateId": "vocabulary-recall-item",
+      "inputs": {
+        "label": "TỪ 1 / 5",
+        "meaningVi": "kiên cường, có khả năng phục hồi",
+        "blankText": "_ _ _ _ _ _ _ _ _",
+        "word": "resilient",
+        "ipa": "/rɪˈzɪliənt/",
+        "countdownSec": 7,
+        "itemIndex": 1,
+        "itemTotal": 5,
+        "brand": "English Mỗi Ngày"
+      },
+      "audioSegments": [
+        {
+          "id": "recall-1-audio-1",
+          "language": "en",
+          "text": "resilient",
+          "rate": "-12%",
+          "pauseBeforeMs": 7000,
+          "pauseAfterMs": 900,
+          "rewritable": false,
+          "sourceField": "vocabulary.resilient-spelling.word"
+        }
+      ],
+      "minDurationSec": 10,
+      "transition": "cut"
+    },
+    {
+      "id": "recall-2",
+      "role": "main",
+      "kind": "recall_item",
+      "templateId": "vocabulary-recall-item",
+      "inputs": {
+        "label": "TỪ 2 / 5",
+        "meaningVi": "có khả năng thích nghi",
+        "blankText": "_ _ _ _ _ _ _ _ _",
+        "word": "adaptable",
+        "ipa": "/əˈdæptəbəl/",
+        "countdownSec": 7,
+        "itemIndex": 2,
+        "itemTotal": 5,
+        "brand": "English Mỗi Ngày"
+      },
+      "audioSegments": [
+        {
+          "id": "recall-2-audio-1",
+          "language": "en",
+          "text": "adaptable",
+          "rate": "-12%",
+          "pauseBeforeMs": 7000,
+          "pauseAfterMs": 900,
+          "rewritable": false,
+          "sourceField": "vocabulary.adaptable-fill-blank.word"
+        }
+      ],
+      "minDurationSec": 10,
+      "transition": "cut"
+    },
+    {
+      "id": "recall-3",
+      "role": "main",
+      "kind": "recall_item",
+      "templateId": "vocabulary-recall-item",
+      "inputs": {
+        "label": "TỪ 3 / 5",
+        "meaningVi": "hiệu quả, ít lãng phí",
+        "blankText": "_ _ _ _ _ _ _ _ _",
+        "word": "efficient",
+        "ipa": "/ɪˈfɪʃənt/",
+        "countdownSec": 7,
+        "itemIndex": 3,
+        "itemTotal": 5,
+        "brand": "English Mỗi Ngày"
+      },
+      "audioSegments": [
+        {
+          "id": "recall-3-audio-1",
+          "language": "en",
+          "text": "efficient",
+          "rate": "-12%",
+          "pauseBeforeMs": 7000,
+          "pauseAfterMs": 900,
+          "rewritable": false,
+          "sourceField": "vocabulary.efficient-meaning.word"
+        }
+      ],
+      "minDurationSec": 10,
+      "transition": "cut"
+    },
+    {
+      "id": "recall-4",
+      "role": "main",
+      "kind": "recall_item",
+      "templateId": "vocabulary-recall-item",
+      "inputs": {
+        "label": "TỪ 4 / 5",
+        "meaningVi": "khan hiếm, không đủ",
+        "blankText": "_ _ _ _ _ _",
+        "word": "scarce",
+        "ipa": "/skeəs/",
+        "countdownSec": 7,
+        "itemIndex": 4,
+        "itemTotal": 5,
+        "brand": "English Mỗi Ngày"
+      },
+      "audioSegments": [
+        {
+          "id": "recall-4-audio-1",
+          "language": "en",
+          "text": "scarce",
+          "rate": "-12%",
+          "pauseBeforeMs": 7000,
+          "pauseAfterMs": 900,
+          "rewritable": false,
+          "sourceField": "vocabulary.scarce-antonym.word"
+        }
+      ],
+      "minDurationSec": 10,
+      "transition": "cut"
+    },
+    {
+      "id": "recall-5",
+      "role": "main",
+      "kind": "recall_item",
+      "templateId": "vocabulary-recall-item",
+      "inputs": {
+        "label": "TỪ 5 / 5",
+        "meaningVi": "thoải mái",
+        "blankText": "_ _ _ _ _ _ _ _ _ _ _",
+        "word": "comfortable",
+        "ipa": "/ˈkʌmftəbəl/",
+        "countdownSec": 7,
+        "itemIndex": 5,
+        "itemTotal": 5,
+        "brand": "English Mỗi Ngày"
+      },
+      "audioSegments": [
+        {
+          "id": "recall-5-audio-1",
+          "language": "en",
+          "text": "comfortable",
+          "rate": "-12%",
+          "pauseBeforeMs": 7000,
+          "pauseAfterMs": 900,
+          "rewritable": false,
+          "sourceField": "vocabulary.comfortable-pronunciation.word"
+        }
+      ],
+      "minDurationSec": 10,
+      "transition": "cut"
+    },
+    {
+      "id": "summary",
+      "role": "main",
+      "kind": "summary",
+      "templateId": "vocabulary-recall-summary",
+      "inputs": {
+        "title": "5 TỪ VỪA ÔN",
+        "subtitle": "Cùng đọc lại từ và nghĩa nhé!",
+        "items": [
+          {
+            "word": "resilient",
+            "meaningVi": "kiên cường, có khả năng phục hồi"
+          },
+          {
+            "word": "adaptable",
+            "meaningVi": "có khả năng thích nghi"
+          },
+          {
+            "word": "efficient",
+            "meaningVi": "hiệu quả, ít lãng phí"
+          },
+          {
+            "word": "scarce",
+            "meaningVi": "khan hiếm, không đủ"
+          },
+          {
+            "word": "comfortable",
+            "meaningVi": "thoải mái"
+          }
+        ],
+        "brand": "English Mỗi Ngày",
+        "handle": "Theo dõi · Lưu · Ôn lại"
+      },
+      "audioSegments": [
+        {
+          "id": "summary-audio-1",
+          "language": "vi",
+          "text": "Cuối cùng, mình cùng đọc lại năm từ và nghĩa của từng từ nhé.",
+          "pauseBeforeMs": 0,
+          "pauseAfterMs": 320,
+          "rewritable": true,
+          "sourceField": "generated.recall_summary_lead_in"
+        },
+        {
+          "id": "summary-audio-2",
+          "language": "en",
+          "text": "resilient",
+          "rate": "-12%",
+          "pauseBeforeMs": 0,
+          "pauseAfterMs": 180,
+          "rewritable": false,
+          "sourceField": "vocabulary.resilient-spelling.word"
+        },
+        {
+          "id": "summary-audio-3",
+          "language": "vi",
+          "text": "kiên cường, có khả năng phục hồi.",
+          "pauseBeforeMs": 0,
+          "pauseAfterMs": 420,
+          "rewritable": false,
+          "sourceField": "vocabulary.resilient-spelling.meaning_vi"
+        },
+        {
+          "id": "summary-audio-4",
+          "language": "en",
+          "text": "adaptable",
+          "rate": "-12%",
+          "pauseBeforeMs": 0,
+          "pauseAfterMs": 180,
+          "rewritable": false,
+          "sourceField": "vocabulary.adaptable-fill-blank.word"
+        },
+        {
+          "id": "summary-audio-5",
+          "language": "vi",
+          "text": "có khả năng thích nghi.",
+          "pauseBeforeMs": 0,
+          "pauseAfterMs": 420,
+          "rewritable": false,
+          "sourceField": "vocabulary.adaptable-fill-blank.meaning_vi"
+        },
+        {
+          "id": "summary-audio-6",
+          "language": "en",
+          "text": "efficient",
+          "rate": "-12%",
+          "pauseBeforeMs": 0,
+          "pauseAfterMs": 180,
+          "rewritable": false,
+          "sourceField": "vocabulary.efficient-meaning.word"
+        },
+        {
+          "id": "summary-audio-7",
+          "language": "vi",
+          "text": "hiệu quả, ít lãng phí.",
+          "pauseBeforeMs": 0,
+          "pauseAfterMs": 420,
+          "rewritable": false,
+          "sourceField": "vocabulary.efficient-meaning.meaning_vi"
+        },
+        {
+          "id": "summary-audio-8",
+          "language": "en",
+          "text": "scarce",
+          "rate": "-12%",
+          "pauseBeforeMs": 0,
+          "pauseAfterMs": 180,
+          "rewritable": false,
+          "sourceField": "vocabulary.scarce-antonym.word"
+        },
+        {
+          "id": "summary-audio-9",
+          "language": "vi",
+          "text": "khan hiếm, không đủ.",
+          "pauseBeforeMs": 0,
+          "pauseAfterMs": 420,
+          "rewritable": false,
+          "sourceField": "vocabulary.scarce-antonym.meaning_vi"
+        },
+        {
+          "id": "summary-audio-10",
+          "language": "en",
+          "text": "comfortable",
+          "rate": "-12%",
+          "pauseBeforeMs": 0,
+          "pauseAfterMs": 180,
+          "rewritable": false,
+          "sourceField": "vocabulary.comfortable-pronunciation.word"
+        },
+        {
+          "id": "summary-audio-11",
+          "language": "vi",
+          "text": "thoải mái.",
+          "pauseBeforeMs": 0,
+          "pauseAfterMs": 420,
+          "rewritable": false,
+          "sourceField": "vocabulary.comfortable-pronunciation.meaning_vi"
+        }
+      ],
+      "minDurationSec": 18,
+      "transition": "cut"
+    },
+    {
+      "id": "outro",
+      "role": "outro",
+      "kind": "outro",
+      "templateId": "shared-channel-outro",
+      "inputs": {
+        "brand": "English Mỗi Ngày",
+        "handle": "Theo dõi · Lưu · Ôn lại",
+        "cta": "Hãy follow kênh và thả tim để cập nhật thêm nhiều bài học mới nhé.",
+        "logoUrl": "",
+        "logoText": "EMN"
+      },
+      "audioSegments": [
+        {
+          "id": "outro-audio-1",
+          "language": "vi",
+          "text": "Hãy follow kênh và thả tim để cập nhật thêm nhiều bài học mới nhé.",
+          "pauseBeforeMs": 0,
+          "pauseAfterMs": 0,
+          "rewritable": false,
+          "sourceField": "generated.recall_outro_cta"
+        }
+      ],
+      "minDurationSec": 7,
+      "transition": "cut"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+node_modules
+dist
+.git
+.env
+output
+services/tts-python/.venv
+services/tts-python/.pytest_cache
+**/__pycache__
+*.pyc
+*.zip

@@ -1,0 +1,363 @@
+{
+  "version": "3.2",
+  "renderer": "hyperframes",
+  "contentType": "vocabulary",
+  "blueprintId": "vocabulary-spelling",
+  "themeId": "english-modern",
+  "metadata": {
+    "title": "resilient · Vocabulary · Spelling",
+    "channel": "English Mỗi Ngày",
+    "level": "B1",
+    "topic": "Personal growth",
+    "source": {
+      "type": "excel",
+      "value": "data/content.xlsx",
+      "sheet": "vocabulary"
+    }
+  },
+  "video": {
+    "id": "resilient-spelling",
+    "title": "resilient · Vocabulary · Spelling",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "aspect": "9:16"
+  },
+  "lockedFacts": {
+    "word": "resilient",
+    "ipa": "/rɪˈzɪliənt/",
+    "meaningVi": "kiên cường, có khả năng phục hồi",
+    "usageVi": "Dùng để mô tả một người, tổ chức hoặc hệ thống có thể vượt qua khó khăn và phục hồi.",
+    "examples": [
+      {
+        "sentenceEn": "She remained resilient after the failure.",
+        "meaningVi": "Cô ấy vẫn kiên cường sau thất bại.",
+        "explanationVi": "Dùng để nói về khả năng vượt qua một trải nghiệm khó khăn."
+      },
+      {
+        "sentenceEn": "The local economy proved resilient.",
+        "meaningVi": "Nền kinh tế địa phương cho thấy khả năng phục hồi tốt.",
+        "explanationVi": "Có thể dùng cho tổ chức hoặc hệ thống."
+      }
+    ],
+    "quizType": "spelling",
+    "quizQuestion": "Đâu là cách viết đúng của từ vừa học?",
+    "quizOptions": [
+      "resilient",
+      "resilent",
+      "resiliant",
+      "resillent"
+    ],
+    "quizAnswer": "resilient",
+    "quizExplanationVi": "Cách viết đúng là resilient, với phần -ient ở cuối."
+  },
+  "scenes": [
+    {
+      "id": "intro",
+      "role": "intro",
+      "kind": "intro",
+      "templateId": "shared-intro",
+      "inputs": {
+        "seriesLabel": "TỪ VỰNG MỖI NGÀY",
+        "hook": "Hôm nay mình cùng tìm hiểu về từ này nhá.",
+        "previewText": "resilient",
+        "level": "B1",
+        "topic": "Personal growth",
+        "brand": "English Mỗi Ngày"
+      },
+      "audioSegments": [
+        {
+          "id": "intro-audio-1",
+          "language": "vi",
+          "text": "Hôm nay mình cùng tìm hiểu về từ này nhá.",
+          "pauseAfterMs": 360,
+          "rewritable": false,
+          "sourceField": "generated.intro",
+          "pauseBeforeMs": 0
+        }
+      ],
+      "minDurationSec": 5,
+      "transition": "cut"
+    },
+    {
+      "id": "word",
+      "role": "main",
+      "kind": "word",
+      "templateId": "vocabulary-word",
+      "inputs": {
+        "label": "TỪ VỰNG HÔM NAY",
+        "word": "resilient",
+        "ipa": "/rɪˈzɪliənt/",
+        "partOfSpeech": "adjective",
+        "meaningVi": "kiên cường, có khả năng phục hồi",
+        "usageVi": "Dùng để mô tả một người, tổ chức hoặc hệ thống có thể vượt qua khó khăn và phục hồi.",
+        "brand": "English Mỗi Ngày"
+      },
+      "audioSegments": [
+        {
+          "id": "word-audio-1",
+          "language": "en",
+          "text": "resilient",
+          "pauseAfterMs": 420,
+          "rewritable": false,
+          "sourceField": "word",
+          "rate": "-12%",
+          "pauseBeforeMs": 0
+        },
+        {
+          "id": "word-audio-2",
+          "language": "vi",
+          "text": "Từ này có nghĩa là kiên cường, có khả năng phục hồi.",
+          "pauseAfterMs": 300,
+          "rewritable": false,
+          "sourceField": "meaning_vi",
+          "pauseBeforeMs": 0
+        },
+        {
+          "id": "word-audio-3",
+          "language": "vi",
+          "text": "Nó được dùng để mô tả một người, tổ chức hoặc hệ thống có thể vượt qua khó khăn và phục hồi.",
+          "pauseAfterMs": 420,
+          "rewritable": false,
+          "sourceField": "usage_vi",
+          "pauseBeforeMs": 0
+        }
+      ],
+      "minDurationSec": 10,
+      "transition": "cut"
+    },
+    {
+      "id": "examples",
+      "role": "main",
+      "kind": "examples",
+      "templateId": "vocabulary-examples",
+      "inputs": {
+        "label": "VÍ DỤ THỰC TẾ",
+        "word": "resilient",
+        "examples": [
+          {
+            "sentenceEn": "She remained resilient after the failure.",
+            "meaningVi": "Cô ấy vẫn kiên cường sau thất bại.",
+            "explanationVi": "Dùng để nói về khả năng vượt qua một trải nghiệm khó khăn."
+          },
+          {
+            "sentenceEn": "The local economy proved resilient.",
+            "meaningVi": "Nền kinh tế địa phương cho thấy khả năng phục hồi tốt.",
+            "explanationVi": "Có thể dùng cho tổ chức hoặc hệ thống."
+          }
+        ],
+        "brand": "English Mỗi Ngày"
+      },
+      "audioSegments": [
+        {
+          "id": "examples-audio-1",
+          "language": "vi",
+          "text": "Sau đây là một số ví dụ nhé.",
+          "pauseAfterMs": 320,
+          "rewritable": true,
+          "sourceField": "generated.examples_lead_in",
+          "pauseBeforeMs": 0
+        },
+        {
+          "id": "examples-audio-2",
+          "language": "en",
+          "text": "She remained resilient after the failure.",
+          "pauseAfterMs": 320,
+          "rewritable": false,
+          "sourceField": "examples[0].sentence_en",
+          "rate": "-12%",
+          "pauseBeforeMs": 0
+        },
+        {
+          "id": "examples-audio-3",
+          "language": "vi",
+          "text": "Câu này có nghĩa là Cô ấy vẫn kiên cường sau thất bại.",
+          "pauseAfterMs": 250,
+          "rewritable": false,
+          "sourceField": "examples[0].meaning_vi",
+          "pauseBeforeMs": 0
+        },
+        {
+          "id": "examples-audio-4",
+          "language": "vi",
+          "text": "Dùng để nói về khả năng vượt qua một trải nghiệm khó khăn.",
+          "pauseAfterMs": 520,
+          "rewritable": false,
+          "sourceField": "examples[0].explanation_vi",
+          "pauseBeforeMs": 0
+        },
+        {
+          "id": "examples-audio-5",
+          "language": "en",
+          "text": "The local economy proved resilient.",
+          "pauseAfterMs": 320,
+          "rewritable": false,
+          "sourceField": "examples[1].sentence_en",
+          "rate": "-12%",
+          "pauseBeforeMs": 0
+        },
+        {
+          "id": "examples-audio-6",
+          "language": "vi",
+          "text": "Câu này có nghĩa là Nền kinh tế địa phương cho thấy khả năng phục hồi tốt.",
+          "pauseAfterMs": 250,
+          "rewritable": false,
+          "sourceField": "examples[1].meaning_vi",
+          "pauseBeforeMs": 0
+        },
+        {
+          "id": "examples-audio-7",
+          "language": "vi",
+          "text": "Có thể dùng cho tổ chức hoặc hệ thống.",
+          "pauseAfterMs": 520,
+          "rewritable": false,
+          "sourceField": "examples[1].explanation_vi",
+          "pauseBeforeMs": 0
+        }
+      ],
+      "minDurationSec": 16,
+      "transition": "cut"
+    },
+    {
+      "id": "quiz",
+      "role": "main",
+      "kind": "quiz",
+      "templateId": "vocabulary-quiz-spelling",
+      "inputs": {
+        "label": "CHÍNH TẢ",
+        "question": "Đâu là cách viết đúng của từ vừa học?",
+        "options": [
+          "resilient",
+          "resilent",
+          "resiliant",
+          "resillent"
+        ],
+        "countdownSec": 7,
+        "commentPrompt": "Bạn nghĩ đáp án là gì? Hãy bình luận câu trả lời trước khi xem đáp án nhé.",
+        "brand": "English Mỗi Ngày",
+        "instruction": "Hãy chọn cách viết đúng chính tả của từ sau đây."
+      },
+      "audioSegments": [
+        {
+          "id": "quiz-audio-1",
+          "language": "vi",
+          "text": "Tiếp theo, mình cùng làm một bài tập nhỏ nhé.",
+          "pauseAfterMs": 300,
+          "rewritable": true,
+          "sourceField": "generated.quiz_lead_in",
+          "pauseBeforeMs": 0
+        },
+        {
+          "id": "quiz-audio-2",
+          "language": "vi",
+          "text": "Hãy chọn cách viết đúng chính tả của từ sau đây.",
+          "pauseAfterMs": 260,
+          "rewritable": false,
+          "sourceField": "generated.quiz_instruction",
+          "pauseBeforeMs": 0
+        },
+        {
+          "id": "quiz-audio-3",
+          "language": "vi",
+          "text": "Bạn nghĩ đáp án là gì? Hãy bình luận câu trả lời trước khi xem đáp án nhé.",
+          "pauseAfterMs": 7000,
+          "rewritable": true,
+          "sourceField": "generated.quiz_comment_prompt",
+          "pauseBeforeMs": 0
+        }
+      ],
+      "minDurationSec": 14,
+      "transition": "cut"
+    },
+    {
+      "id": "answer",
+      "role": "main",
+      "kind": "answer",
+      "templateId": "vocabulary-answer-spelling",
+      "inputs": {
+        "label": "CÁCH VIẾT ĐÚNG",
+        "question": "Đâu là cách viết đúng của từ vừa học?",
+        "options": [
+          "resilient",
+          "resilent",
+          "resiliant",
+          "resillent"
+        ],
+        "answer": "resilient",
+        "answerIndex": 0,
+        "explanationVi": "Cách viết đúng là resilient, với phần -ient ở cuối.",
+        "word": "resilient",
+        "brand": "English Mỗi Ngày"
+      },
+      "audioSegments": [
+        {
+          "id": "answer-audio-1",
+          "language": "vi",
+          "text": "Đáp án đúng là:",
+          "pauseAfterMs": 220,
+          "rewritable": true,
+          "sourceField": "generated.answer_lead_in",
+          "pauseBeforeMs": 0
+        },
+        {
+          "id": "answer-audio-2",
+          "language": "en",
+          "text": "resilient",
+          "pauseAfterMs": 360,
+          "rewritable": false,
+          "sourceField": "quiz_answer",
+          "rate": "-12%",
+          "pauseBeforeMs": 0
+        },
+        {
+          "id": "answer-audio-3",
+          "language": "vi",
+          "text": "Cách viết đúng là từ vừa học, với phần i, e, n, t ở cuối.",
+          "pauseAfterMs": 420,
+          "rewritable": false,
+          "sourceField": "quiz_explanation_vi",
+          "pauseBeforeMs": 0
+        }
+      ],
+      "minDurationSec": 8,
+      "transition": "cut"
+    },
+    {
+      "id": "outro",
+      "role": "outro",
+      "kind": "outro",
+      "templateId": "shared-outro",
+      "inputs": {
+        "recapTitle": "resilient",
+        "recapText": "kiên cường, có khả năng phục hồi",
+        "cta": "Hãy đặt một câu với từ vừa học trong phần bình luận nhé.",
+        "brand": "English Mỗi Ngày",
+        "handle": "Theo dõi · Lưu · Ôn lại"
+      },
+      "audioSegments": [
+        {
+          "id": "outro-audio-1",
+          "language": "en",
+          "text": "resilient",
+          "pauseAfterMs": 320,
+          "rewritable": false,
+          "sourceField": "word",
+          "rate": "-12%",
+          "pauseBeforeMs": 0
+        },
+        {
+          "id": "outro-audio-2",
+          "language": "vi",
+          "text": "Hãy đặt một câu với từ vừa học trong phần bình luận nhé.",
+          "pauseAfterMs": 0,
+          "rewritable": true,
+          "sourceField": "generated.outro_cta",
+          "pauseBeforeMs": 0
+        }
+      ],
+      "minDurationSec": 6,
+      "transition": "cut"
+    }
+  ],
+  "videoType": "single_word"
+}

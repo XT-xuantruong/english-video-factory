@@ -1,0 +1,5 @@
+{
+  "id": "vocabulary-recall-item",
+  "name": "Vocabulary Recall Item",
+  "description": "Shows a Vietnamese meaning and blank, counts down, then reveals and reads only the English word"
+}

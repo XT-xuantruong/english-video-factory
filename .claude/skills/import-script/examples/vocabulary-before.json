@@ -1,0 +1,7 @@
+{
+  "id": "quiz-audio-1",
+  "language": "vi",
+  "text": "Tiếp theo, mình cùng làm một bài tập nhỏ nhé.",
+  "rewritable": true,
+  "sourceField": "generated.quiz_lead_in"
+}

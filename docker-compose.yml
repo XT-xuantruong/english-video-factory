@@ -1,0 +1,34 @@
+services:
+  tts:
+    build:
+      context: ./services/tts-python
+    environment:
+      VIENEU_VOICE: ${VIENEU_VOICE:-Trúc Ly}
+      VIENEU_STYLE: ${VIENEU_STYLE:-tu_nhien}
+      VIENEU_BACKEND: ${VIENEU_BACKEND:-onnx}
+      VIENEU_PRECISION: ${VIENEU_PRECISION:-int8}
+      VIENEU_RATE: ${VIENEU_RATE:-0.94}
+      EDGE_VOICE: ${EDGE_VOICE:-en-US-AvaNeural}
+      EDGE_RATE: ${EDGE_RATE:--10%}
+      EDGE_PITCH: ${EDGE_PITCH:-+0Hz}
+    ports:
+      - "8124:8124"
+    volumes:
+      - ./output:/app/output
+
+  cli:
+    build: .
+    depends_on:
+      - tts
+    environment:
+      TTS_SERVICE_URL: http://tts:8124
+      EXCEL_PATH: data/content.xlsx
+      OUTPUT_DIR: output
+      TEMPLATES_DIR: templates
+      ASSETS_DIR: assets
+      SCRIPT_ENGLISH_RATE: ${SCRIPT_ENGLISH_RATE:--12%}
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./templates:/app/templates
+      - ./assets:/app/assets
